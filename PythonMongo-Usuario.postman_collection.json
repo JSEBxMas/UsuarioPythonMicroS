@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "27eb468a-f8d2-4d7f-bd4c-a3154fce12be",
+		"name": "PythonMongo-Usuario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45912475",
+		"_collection_link": "https://sebastianespitia.postman.co/workspace/Sebastian-Espitia's-Workspace~53314536-a0a5-4505-892f-a8348f733709/collection/45912475-27eb468a-f8d2-4d7f-bd4c-a3154fce12be?action=share&source=collection_link&creator=45912475"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"Sebastin\",\n    \"primerApellido\":\"Espitia\",\n    \"segundoApellido\":\"Barbosa\",\n    \"correo\": \"yanofalso@gmail.com\",\n    \"edad\":9\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/actualizarUsuaario?correo=falso@gmail.com",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"actualizarUsuaario"
+					],
+					"query": [
+						{
+							"key": "correo",
+							"value": "falso@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"Sebastin\",\n    \"primerApellido\":\"Espitia\",\n    \"segundoApellido\":\"Barbosa\",\n    \"correo\": \"yanofalso@gmail.com\",\n    \"edad\":9\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/obtenerUsuarios",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"obtenerUsuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"Sebastin\",\n    \"primerApellido\":\"Espitia\",\n    \"segundoApellido\":\"Barbosa\",\n    \"correo\": \"yanofalso@gmail.com\",\n    \"edad\":9\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/obtenerUsuario/yanofalso@gmail.com",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"obtenerUsuario",
+						"yanofalso@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"Juan Sebastin\",\n    \"primerApellido\":\"Espitia\",\n    \"segundoApellido\":\"Barbosa\",\n    \"correo\": \"espita@gmail.com\",\n    \"edad\":30\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/eliminarUsuaario/yanofalso@gmail.com",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"eliminarUsuaario",
+						"yanofalso@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\":\"Sebastin\",\n    \"primerApellido\":\"Espitia\",\n    \"segundoApellido\":\"Barbosa\",\n    \"correo\": \"yanofalso@gmail.com\",\n    \"edad\":9\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/agregarUsuaario",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"agregarUsuaario"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
